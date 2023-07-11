@@ -8,7 +8,11 @@ font-family: 'Work Sans', sans-serif;
 section{
     width: 100%;
 }
- 
+.colour{
+  
+        color:#E55473;
+        
+}
 
 /* ..............banner................ */
 .container{
@@ -16,19 +20,21 @@ section{
 }
 .banner{
     display: flex;
-   
+   height: 100vh;
     width: 80%;
     margin: 0 auto;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 
 }
 .box{
     width: 50%;
     flex: 1;
 }
-.banner{
-    height: 600px;
-}
+
+
+
 .banner-heading{
     font-size: 60px;
     color: #272727;
@@ -55,8 +61,9 @@ padding: 15px 15px;
 
 }
 .header-img img{
-    height:300px ;
-    ;
+     
+height:100vh;
+
 }
 /* ........................main section................. */
 
@@ -67,7 +74,7 @@ padding: 15px 15px;
     text-align: center;
 }
 .Featured{
-    width: 80%;
+    width: 40%;
     margin: 0 auto;
 }
 .Featured-heading{
@@ -86,14 +93,21 @@ font-weight: 700;
     justify-content: space-evenly;
     width: 80%;
     margin: 0 auto;
+    gap: 20px;
 }
-.Flower{
+.flower{
    border-radius: 220px 220px 0 0;
-   padding-top: 100px;
+   
    width: 400px;
    justify-content: center;
    height: 500px;
    position: relative;
+   color: rgba(39, 39, 39, 0.60);
+  
+  
+}
+.flower p{
+    text-align: center;
 }
 .flower-img{
     position: absolute;
@@ -115,9 +129,9 @@ font-weight: 700;
 .section-2-pera{
     text-decoration: underline;
     position: absolute;
-    top: 500px;
+    top: 520px;
     color: #272727;
-    text-align: center;
+    align-items: center;
    
     font-size: 24px;
     
@@ -130,6 +144,13 @@ font-weight: 700;
     
     
    }
+   .box-group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   }
    .section-3-container{
     display: flex;
     border-radius: 8px;
@@ -141,6 +162,18 @@ width: 80%;
 margin: 0 auto;
 align-items: center;
    }
+   .section-3-pera{
+    color: rgba(39, 39, 39, 0.80);
+    
+
+
+font-size: 20px;
+text-align: center;
+font-weight: 500;
+line-height: 35px;
+   }
+  
+   
    /* ......................section-4.................. */
    .section-4{
     margin-top: 150px;
@@ -150,16 +183,37 @@ background: rgba(229, 84, 115, 0.05)
    .section-4-container{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
+    gap: 250px;
    }
    .boxx{
     width: 50%;
     flex: 1;
    }
+  
    .section-4-description{
   text-align: center;
   
+  
+   }
+   .section-4-heading{
+    color: #272727;
+
+font-size: 40px;
+
+font-weight: 600;
+   }
+   .section-4-pera{
+    color: rgba(39, 39, 39, 0.60);
+
+font-size: 18px;
+
+font-weight: 400;
+line-height: 30px;
+margin-top: 20px;
+margin-bottom: 20px;
    }
    .section-4-img{
    
@@ -172,19 +226,62 @@ background: rgba(229, 84, 115, 0.05)
     height: 200px;
     background: #FFF;
     text-align: center;
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
+   
+   }
+   .section-5-heading{
+    color: #272727;
+
+
+font-size: 30px;
+
+font-weight: 700;
+   }
+   .section-5-pera{
+    line-height: 30px;
+    color: rgba(39, 39, 39, 0.60);
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 20px;
    }
    /* .........................section 6................. */
+   .section-6{
+    /* margin-top: 50px; */
+   }
    .section-6-container{
     
     width: 80%;
     display: flex;
     margin: 0 auto;
+    gap: 20px;
     /* justify-content: space-between; */
    }
    .section-6-container img{
     width: 100%;
+   }
+
+   /* ........................extra-section.............. */
+
+   .extra-section{
+    text-align: center;
+    padding: 50px 0 20px 0;
+   }
+   .extra-section h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    color: rgba(39, 39, 39, 0.60);
+   }
+   .extra-section-img{
+  
+    gap: 50px;
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
    }
    /* .................section-7.......... */
    .section-7{
@@ -195,20 +292,77 @@ background: rgba(229, 84, 115, 0.05)
     width: 80%;
     margin: 0 auto;
     position: relative;
+    text-align: center;
    }
    .section-7-img img{
     width: 100%;
    }
+   .section-7 h3{
+    color: #272727;
+
+font-size: 40px;
+
+font-weight: 700;
+   }
+   .section-7 p{
+    color: rgba(39, 39, 39, 0.60);
+
+font-size: 15px;
+
+font-weight: 400;
+line-height: 20px;
+margin: 5px 0 20px 0;
+   }
    .section-7-description{
     position: absolute;
-    left: 30% ;
+    left: 20% ;
     
-    top: 20%;
+    top: 40%;
+   }
+   .section-7-email{
+    width: 500px;
+height: 50px;
+padding: 0 10px;
+margin-right: 10px;
    }
    /* .............footer........... */
+
+
    .footer-container{
     background: #111010;
     color: rgba(255, 255, 255, 0.90);   
     width: 100%;
-height: 449px;
+
+   }
+   .footer-content{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+padding: 200px 400px;
+gap: 15px;
+   }
+   .footer-heading{
+    color:#FFFFFF;
+    
+    font-size: 48px;
+   
+    font-weight: 800;
+   }
+   .footer-pera{
+    color: rgba(255, 255, 255, 0.90);
+    
+    font-size: 18px;
+   
+    font-weight: 400;
+    line-height: 30px;
+   
+   }
+   .footer-tiny{
+    color: rgba(255, 255, 255, 0.40);
+    
+    font-size: 16px;
+  
+    font-weight: 400;
    }
